@@ -17,7 +17,9 @@ module.exports.session = {
    * of your users, forcing them to log in again.                             *
    *                                                                          *
    ***************************************************************************/
-  secret: "7fdca2c7ecdc07c00c6edd4566ffee57"
+  secret: "7fdca2c7ecdc07c00c6edd4566ffee57",
+  adapter: "connect-mongo",
+  url: "mongodb://localhost:27017/smapp-sessions"
 
   /***************************************************************************
    *                                                                          *
@@ -30,7 +32,6 @@ module.exports.session = {
    * https://sailsjs.com/config/session                                       *
    *                                                                          *
    ***************************************************************************/
-
   // isSessionDisabled: function(req) {
   //   return !!req.path.match(req._sails.LOOKS_LIKE_ASSET_RX);
   // }
